@@ -28,7 +28,7 @@ func (g *Game) Draw(screen *ebiten.Image) {
 }
 
 func (g *Game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeight int) {
-	return g.cfg.ScreenWidth / 2, g.cfg.ScreenHeight / 2
+	return g.cfg.ScreenWidth, g.cfg.ScreenHeight
 }
 func (g *Game) addBullet(bullet *Bullet) {
 	g.bullets[bullet] = struct{}{}
@@ -38,8 +38,8 @@ func NewGame() *Game {
 	ebiten.SetWindowSize(cfg.ScreenWidth, cfg.ScreenHeight)
 	ebiten.SetWindowTitle(cfg.Title)
 	return &Game{
-		ship:    NewShip(cfg.ScreenWidth, cfg.ScreenHeight),
 		input:   &Input{},
+		ship:    NewShip(cfg.ScreenWidth, cfg.ScreenHeight),
 		cfg:     cfg,
 		bullets: make(map[*Bullet]struct{}),
 	}

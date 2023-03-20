@@ -13,10 +13,15 @@
     "bulletHeight": 15,
     "bulletSpeedFactor": 2,
     "bulletColor": {
-    "r": 80,
-    "g": 80,
+    "r": 180,
+    "g": 180,
     "b": 80,
     "a": 255
   },
-  "maxBulletNum":10
+  "maxBulletNum":20,
+  "bulletInterval":20,
+  "alienSpeedFactor":2,
+  "fontSize":18,
+  "titleFontSize":18,
+  "smallFontSize":18
 }

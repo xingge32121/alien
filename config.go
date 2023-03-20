@@ -1,3 +1,12 @@
+/*
+ * @Author: Wujiahuo
+ * @Date: 2023-03-10 14:12:17
+ * @LastEditors: OBKoro1
+ * @LastEditTime: 2023-03-16 14:19:59
+ * @FilePath: \alien\config.go
+ * @Description:
+ * Copyright (c) 2023 by Wujiahuo/bzlrobot, All Rights Reserved.
+ */
 package main
 
 import (
@@ -18,6 +27,11 @@ type Config struct {
 	BulletSpeedFactor float64    `json:"bulletSpeedFactor"`
 	BulletColor       color.RGBA `json:"bulletColor"`
 	MaxBulletNum      int        `json:"maxBulletNum"`
+	BulletInterval    int64      `json:"bulletInterval"`
+	AlienSpeedFactor  float64    `json:"alienSpeedFactor"`
+	TitleFontSize     float64    `json:"titleFontSize"`
+	FontSize          float64    `json:"fontSize"`
+	SmallFontSize     float64    `json:"smallFontSize"`
 }
 
 func loadConfig() *Config {

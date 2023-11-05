@@ -16,7 +16,7 @@ import (
 	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
 	_ "golang.org/x/image/bmp"
 )
-
+//飞船
 type Ship struct {
 	GameObject
 	image *ebiten.Image
